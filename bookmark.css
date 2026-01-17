@@ -121,8 +121,8 @@
         color: var(--primary);
     }
 
-    /*active style for the first link*/
-    .navigation-links a:first-child {
+    /*active style for the fourth link*/
+    .navigation-links a:nth-child(4) {
         color: var(--primary);
     }
 
