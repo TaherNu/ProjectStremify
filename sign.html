@@ -6,7 +6,7 @@
     <!--importing fas fa emojis-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!--linking external CSS stylesheet-->
-    <link rel="stylesheet" href="INDEXsigninsignup.css">
+    <link rel="stylesheet" href="signpage.css">
     <!--Icon-->
     <link rel="icon" type="image/png" href="assets/icon.png">
     <!--title-->
@@ -269,7 +269,7 @@
                                 alert(`Welcome back, ${data.user.name}!`);
                                 localStorage.setItem('user', JSON.stringify(data));
                                 //redirects to the main page after login
-                                window.location.href = 'indexMAIN.html';
+                                window.location.href = 'index.html';
                             } else {
                                 //error message
                                 alert(data.message || 'Invalid email or password, please try again');
