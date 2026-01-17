@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--importing Font awesome for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--Linking external CSS stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Icon-->
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <!--Title of the page-->
+    <title>Streamify</title>
+</head>
+<body>
+    <!--Header section which contains logo, navigation and user controls-->
+    <header id="header">
+        <!--logo container-->
+        <div class="logo">
+            <div class="icon"><i class="fas fa-play"></i></div>
+            <span>Streamify</span>
+        </div>
+        <!--navigation container-->
+        <nav class="main-nav">
+            <div class="navigation-links">
+                <a href="index.html"><i class="fas fa-home active"></i>Home</a>
+                <a href=""><i class="fas fa-compass"></i>browse</a>
+                <a href=""><i class="fas fa-fire"></i>Trending</a>
+                <a href="bookmarks.html"><i class="fas fa-bookmark"></i>Bookmarks</a>
+            </div>
+        </nav>
+        <!--right side of the navigation bar-->
+        <div class="header-right">
+            <div class="navigation-icons">
+                <div class="search-container">
+                    <button class="icon-btn search-btn"><i class="fas fa-search"></i></button>
+                    <div class="search-expand">
+                        <input type="text" class="search-input" placeholder="Search Movies/Series">
+                    </div>
+                </div>
+                <!--notification section container-->
+                <div class="notif-container">
+                    <button class="icon-btn">
+                        <i class="fas fa-bell"><span class="notif-count">6</span></i>
+                    </button>
+
+                    <div class="notif-dropdown">
+                        <div class="notif-header">
+                            <h3>Notifications</h3>
+                            <button class="mark-read-btn">Mark All As Read</button>
+                        </div>
+
+                        <div class="notif-list">
+                            <!--Notification item-->
+                            <div class="notif-item new">
+                                <div class="notif-img">
+                                    <img src="assets/tokyoghoulPL.jpg" alt="Tokyo Ghoul Poster">
+                                </div>
+                                <div class="notif-content">
+                                    <h4>New Season Release</h4>
+                                    <p> Tokyo Ghoul - Season 5 is now available</p>
+                                    <span class="notif-time">30 Minutes ago</span>
+                                </div>
+                                <button class="notif-close-btn"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="notif-item new">
+                                <div class="notif-img">
+                                    <img src="assets/jjkPL.jpg" alt="Jujutsu Kaisen Poster">
+                                </div>
+                                <div class="notif-content">
+                                    <h4>New Episode Available</h4>
+                                    <p> Jujutsu Kaisen - Season 3 Episode 12 is now available</p>
+                                    <span class="notif-time">2 Hours ago</span>
+                                </div>
+                                <button class="notif-close-btn"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="notif-item">
+                                <div class="notif-img">
+                                    <img src="assets/invinciblePL.jpg" alt="Invincible Poster">
+                                </div>
+                                <div class="notif-content">
+                                    <h4>New Season Release</h4>
+                                    <p> Invincible - Season 4 is now available</p>
+                                    <span class="notif-time">1 day ago</span>
+                                </div>
+                                <button class="notif-close-btn"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="notif-item">
+                                <div class="notif-img">
+                                    <img src="assets/strangerthingsPLA.jpg" alt="Stranger Things Poster">
+                                </div>
+                                <div class="notif-content">
+                                    <h4>New Episode Available</h4>
+                                    <p> Stranger Things - Season 5 Episode 6 is now available</p>
+                                    <span class="notif-time">2 days ago</span>
+                                </div>
+                                <button class="notif-close-btn"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="notif-item">
+                                <div class="notif-img">
+                                    <img src="assets/mylittleponyL.jpg" alt="My Litte Pony Poster">
+                                </div>
+                                <div class="notif-content">
+                                    <h4>New Episode Available</h4>
+                                    <p> My Little Pony - Season 5 Episodes 2 is now available</p>
+                                    <span class="notif-time">2 days ago</span>
+                                </div>
+                                <button class="notif-close-btn"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="notif-footer">
+                            <a href="#" class="view-all">View All Notifications</a>
+                        </div>
+                    </div>
+                </div>
+                        
+
+                <!--profile section container with drop down menu-->
+                <div class="profile-section">
+                    <button class="icon-btn"> <i class="fas fa-user-circle"></i></button>
+                    <div class="profile-dropdown-menu">
+                        <a href="#"><i class="fas fa-user"></i>Profile</a>
+                        <a href="#"><i class="fas fa-cog"></i>Settings</a>
+                        <a href="#"><i class="fas fa-question-circle"></i>Help</a>
+                        <a href="sign.html"><i class="fas fa-sign-out-alt"></i>Sign Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--main section container-->
+    <section class="main">
+        <div class="main-container">
+            <!--slide container-->
+            <div class="container-slide active">
+                <img src="assets/fnafP.jpg" alt="Five Nights At Freddy's 2 movie poster" class="slide-img">
+                <div class="gradient-overlay"></div>
+                <div class="main-content">
+                        <h1 class="main-title">FIVE NIGHTS AT FREDDY'S 2</h1>
+                    <div class="main-meta">
+                        <div class="rating">
+                            <span class="star"><i class="fas fa-star"></i></span>
+                            <span>6.7/10</span>
+                        </div>
+                        <div class="genre-tag"><i class="fas fa-calendar"></i>2025</div>
+                        <div class="genre-tag"><i class="fas fa-clock"></i>2h 10m</div>
+                        <div class="genre-tag"><i class="fas fa-ghost"></i>Horror</div>
+                    </div>
+                    <p class="main-description">
+                        One year after the supernatural nightmare at Freddy 
+                        Fazbear's Pizza, Abby runs away to reconnect with her 
+                        animatronic friends, uncovering dark secrets about the
+                        true origins of Freddy's and unleashing a horror hidden
+                        for decades.
+                    </p>
+                    <div class="main-buttons">
+                        <button class="btn play-btn"><i class="fas fa-play"></i>Watch Now</button>
+                        <button class="btn more-btn"><i class="fas fa-info-circle"></i>More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-slide">
+                <img src="assets/wallpaperflare.com_wallpaper.jpg" alt="Chainsaw Man: Reze Poster" class="slide-img">
+                <div class="gradient-overlay"></div>
+                <div class="main-content">
+                    <h1 class="main-title">CHAINSAW MAN: REZE </h1>
+                    <div class="main-meta">
+                        <div class="rating">
+                            <span class="star"><i class="fas fa-star"></i></span>
+                            <span>9.9/10</span>
+                        </div>
+                        <div class="genre-tag"><i class="fas fa-calendar"></i>2025</div>
+                        <div class="genre-tag"><i class="fas fa-clock"></i>25m</div>
+                        <div class="genre-tag"><i class="fas fa-fist-raised"></i>action</div>
+                    </div>
+                    <p class="main-description">
+                        Denji meets a charming girl named Reze just as a new wave
+                        of devils threatens Public Safety. As their connection 
+                        grows, Denji is pulled into a dangerous conflict where 
+                        trust, loyalty, and his own heart are put to the test.
+                    </p>
+                    <div class="main-buttons">
+                        <button class="btn play-btn"><i class="fas fa-play"></i>Watch Now</button>
+                        <button class="btn more-btn"><i class="fas fa-info-circle"></i>More Info</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container-slide">
+                <img src="assets/strangerthingsPLA.jpg" alt="Stranger Things Poster" class="slide-img">
+                <div class="gradient-overlay"></div>
+                <div class="main-content">
+                    <h1 class="main-title">STRANGER THINGS</h1>
+                        <div class="main-meta">
+                        <div class="rating">
+                            <span class="star"><i class="fas fa-star"></i></span>
+                            <span>10/10</span>
+                        </div>
+                            <div class="genre-tag"><i class="fas fa-calendar"></i> 2025</div>
+                            <div class="genre-tag"><i class="fas fa-clock"></i> 50m</div>
+                            <div class="genre-tag"><i class="fas fa-heartbeat"></i> Thriller</div>
+                        </div>
+                        <p class="main-description">
+                            In 1980s Indiana, a group of young friends witness 
+                            supernatural forces and secret government exploits.
+                            As they search for answers, the children unravel a
+                            series of extraordinary mysteries.
+                        </p>
+                        <div class="main-buttons">
+                        <button class="btn play-btn" onclick="window.location.href='movie.html'">
+                            <i class="fas fa-play"></i>Watch Now</button>
+                        <button class="btn more-btn" onclick="window.location.href='movie.html'">
+                            <i class="fas fa-info-circle"></i>More Info</button>
+                        </div>
+                </div>
+            </div>
+
+            <div class="container-slide">
+                <img src="assets/AEP.jpg" alt="Avengers Endgame Poster" class="slide-img">
+                <div class="gradient-overlay"></div>
+                <div class="main-content">
+                    <h1 class="main-title">Avengers Endgame</h1>
+                    <div class="main-meta">
+                        <div class="rating">
+                            <span class="star"><i class="fas fa-star"></i></span>
+                            <span>9.6/10</span>
+                        </div>
+                            <div class="genre-tag"><i class="fas fa-calendar"></i> 2025</div>
+                            <div class="genre-tag"><i class="fas fa-clock"></i> 2h 50m</div>
+                            <div class="genre-tag"><i class="fas fa-fist-raised"></i> action</div>
+                        </div>
+                        <p class="main-description">
+                            After the devastating events of Avengers: Infinity
+                            War (2018), the universe is in ruins. With the help
+                            of remaining allies, the Avengers assemble once more
+                            in order to reverse Thanos' actions and restore 
+                            balance to the universe.
+                        </p>
+                        <div class="main-buttons">
+                        <button class="btn play-btn"><i class="fas fa-play"></i>Watch Now</button>
+                        <button class="btn more-btn"><i class="fas fa-info-circle"></i>More Info</button>
+                        </div>
+                </div>
+            </div>
+
+            <div class="container-slide">
+                <img src="assets/onepiece.jpg" alt="One Piece Poster" class="slide-img">
+                <div class="gradient-overlay"></div>
+                <div class="main-content">
+                    <h1 class="main-title">One Piece</h1>
+                    <div class="main-meta">
+                        <div class="rating">
+                            <span class="star"><i class="fas fa-star"></i></span>
+                            <span>10/10</span>
+                        </div>
+                            <div class="genre-tag"><i class="fas fa-calendar"></i> 2025</div>
+                            <div class="genre-tag"><i class="fas fa-clock"></i> 24m</div>
+                            <div class="genre-tag"><i class="fas fa-ship"></i> Adventure</div>
+                        </div>
+                        <p class="main-description">
+                            Rubber-bodied dreamer Monkey D. Luffy gathers
+                            an eclectic pirate crew and braves the perilous
+                            Grand Line, battling tyrants and monsters to 
+                            claim the legendary "One Piece" and become King 
+                            of the Pirates.
+                        </p>
+                        <div class="main-buttons">
+                        <button class="btn play-btn"><i class="fas fa-play"></i>Watch Now</button>
+                        <button class="btn more-btn"><i class="fas fa-info-circle"></i>More Info</button>
+                        </div>
+                </div>
+            </div>
+
+            <div class="container-slide">
+                <img src="assets/BBP.jpg" alt="Breaking Bad Poster" class="slide-img">
+                <div class="gradient-overlay"></div>
+                <div class="main-content">
+                    <h1 class="main-title">Breaking Bad</h1>
+                    <div class="main-meta">
+                        <div class="rating">
+                            <span class="star"><i class="fas fa-star"></i></span>
+                            <span>9.5/10</span>
+                        </div>
+                            <div class="genre-tag"><i class="fas fa-calendar"></i> 2008</div>
+                            <div class="genre-tag"><i class="fas fa-clock"></i> 55m</div>
+                            <div class="genre-tag"><i class="fas fa-skull-crossbones"></i> Drug Crime</div>
+                        </div>
+                        <p class="main-description">
+                            A chemistry teacher diagnosed with inoperable lung
+                            cancer turns to manufacturing and selling 
+                            methamphetamine with a former student to secure his
+                            family's future.
+                        </p>
+                        <div class="main-buttons">
+                        <button class="btn play-btn"><i class="fas fa-play"></i>Watch Now</button>
+                        <button class="btn more-btn"><i class="fas fa-info-circle"></i>More Info</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!--button container with main controls-->
+        <div class="main-controls">
+            <button class="main-previous"><i class="fas fa-chevron-left"></i></button>
+            <div class="main-indicators">
+                <span class="indicator active" data-slide = "0"></span>
+                <span class="indicator" data-slide = "1"></span>
+                <span class="indicator" data-slide = "2"></span>
+                <span class="indicator" data-slide = "3"></span>
+                <span class="indicator" data-slide = "4"></span>
+                <span class="indicator" data-slide = "5"></span>
+            </div>
+            <button class="main-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+    <!--top section container-->
+    <section class="top-section">
+        <div class="section-header">
+            <div class="title-container">
+                <div class="title-decor">
+                    <h2 class="section-title">TOP 10 TODAY</h2>
+                    <div class="section-subtitle">Most Popular Movies & Series Right Now</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-container">
+            <button class="top10-nav-btn prev-btn" aria-label="Previous">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="top10-container">
+                <!--top 10 item container-->
+                <div class="top10-item" data-rank="1">
+                    <div class="rank-number">1</div>
+                    <div class="movie-card">
+                        <img src="assets/demonslayerP.png" alt="Poster" class="movie-poster">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Kimetsu No Yaiba : Infinity Castle</h3>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star">9.6</i></span>
+                                    <span class="year">2025</span>
+                                </div>
+                                <div class="genres">
+                                    <span class="genre-tag">Anime</span>
+                                    <span class="genre-tag">Action</span>
+                                    <span class="genre-tag">Fantasy</span>
+                                    <span class="genre-tag">Demons</span>
+                                </div>
+                            </div>
+                            <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="top10-item" data-rank="2">
+                    <div class="rank-number">2</div>
+                    <div class="movie-card">
+                        <img src="assets/spiderman-acrossP.jpg" alt="" class="movie-poster">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Spider-Man Across The Multiverse</h3>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i>8.5</span>
+                                    <span class="year">2023</span>
+                                </div>
+                                <div class="genres">
+                                    <span class="genre-tag">Action</span>
+                                    <span class="genre-tag">Adventure</span>
+                                    <span class="genre-tag">Animation</span>
+                                    <span class="genre-tag">Sci-Fi Epic</span>
+                                </div>
+                            </div>
+                            <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="top10-item" data-rank="3">
+                    <div class="rank-number">3</div>
+                    <div class="movie-card">
+                        <img src="assets/squidP.jpg" alt="" class="movie-poster">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Squid Games</h3>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i>8.0</span>
+                                    <span class="year">2021</span>
+                                </div>
+                                <div class="genres">
+                                    <span class="genre-tag">Thriller</span>
+                                    <span class="genre-tag">Comedy</span>
+                                    <span class="genre-tag">Crime</span>
+                                    <span class="genre-tag">Psychological Drama</span>
+                                </div>
+                            </div>
+                            <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="top10-item" data-rank="4">
+                    <div class="rank-number">4</div>
+                    <div class="movie-card">
+                        <img src="assets/invincibleP.jpg" alt="" class="movie-poster">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Invincible</h3>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i>8.7</span>
+                                    <span class="year">2021</span>
+                                </div>
+                                <div class="genres">
+                                    <span class="genre-tag">Animation</span>
+                                    <span class="genre-tag">Action</span>
+                                    <span class="genre-tag">Superhero</span>
+                                    <span class="genre-tag">Tragedy</span>
+                                </div>
+                            </div>
+                            <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="top10-item" data-rank="5">
+                    <div class="rank-number">5</div>
+                    <div class="movie-card">
+                        <img src="assets/shingekiP.jpg" alt="" class="movie-poster">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Attack On Titan</h3>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i>9.1</span>
+                                    <span class="year">2015</span>
+                                </div>
+                                <div class="genres">
+                                    <span class="genre-tag">Anime</span>
+                                    <span class="genre-tag">Action</span>
+                                    <span class="genre-tag">Horror</span>
+                                    <span class="genre-tag">Gore</span>
+                                </div>
+                            </div>
+                            <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="top10-item" data-rank="6">
+                    <div class="rank-number">6</div>
+                    <div class="movie-card">
+                        <img src="assets/theBoysP.jpg" alt="" class="movie-poster">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3 class="movie-title">The Boys</h3>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i>8.6</span>
+                                    <span class="year">2019</span>
+                                </div>
+                                <div class="genres">
+                                    <span class="genre-tag">Dark Comedy</span>
+                                    <span class="genre-tag">Action</span>
+                                    <span class="genre-tag">Superhero</span>
+                                    <span class="genre-tag">Satire</span>
+                                </div>
+                            </div>
+                            <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="top10-item" data-rank="7">
+                    <div class="rank-number">7</div>
+                    <div class="movie-card">
+                        <img src="assets/GenVP.jpg" alt="" class="movie-poster">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Gev V</h3>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i>7.6</span>
+                                    <span class="year">2022</span>
+                                </div>
+                                <div class="genres">
+                                    <span class="genre-tag">Action</span>
+                                    <span class="genre-tag">Superhero</span>
+                                    <span class="genre-tag">Comedy</span>
+                                    <span class="genre-tag">Gore</span>
+                                </div>
+                            </div>
+                            <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="top10-item" data-rank="8">
+                    <div class="rank-number">8</div>
+                    <div class="movie-card">
+                        <img src="assets/GaneiftgribsP.jpg" alt="" class="movie-poster">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Game Of Thrones</h3>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i>9.2</span>
+                                    <span class="year">2011</span>
+                                </div>
+                                <div class="genres">
+                                    <span class="genre-tag">Action</span>
+                                    <span class="genre-tag">Adventure</span>
+                                    <span class="genre-tag">Fantasy</span>
+                                    <span class="genre-tag">Sword & Sorcery</span>
+                                </div>
+                            </div>
+                            <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="top10-item" data-rank="9">
+                    <div class="rank-number">9</div>
+                    <div class="movie-card">
+                        <img src="assets/spidermanP.jpg" alt="" class="movie-poster">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Spider-Man No Way Home</h3>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i>8.2</span>
+                                    <span class="year">2021</span>
+                                </div>
+                                <div class="genres">
+                                    <span class="genre-tag">Action</span>
+                                    <span class="genre-tag">Superhero</span>
+                                    <span class="genre-tag">Adventure</span>
+                                    <span class="genre-tag">Fantasy</span>
+                                </div>
+                            </div>
+                            <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="top10-item" data-rank="10">
+                    <div class="rank-number">10</div>
+                    <div class="movie-card">
+                        <img src="assets/BatmanP.jpg" alt="" class="movie-poster">
+                        <div class="movie-overlay">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Bat-Man</h3>
+                                <div class="movie-meta">
+                                    <span class="rating"><i class="fas fa-star"></i>7.8</span>
+                                    <span class="year">2022</span>
+                                </div>
+                                <div class="genres">
+                                    <span class="genre-tag">Action</span>
+                                    <span class="genre-tag">Superhero</span>
+                                    <span class="genre-tag">Detective</span>
+                                    <span class="genre-tag">Crime</span>
+                                </div>
+                            </div>
+                            <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--navigation button-->
+            <button class="top10-nav-btn next-btn" aria-label="Next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+
+
+    <!--continue watching section-->
+    <section class="continue-watching">
+        <div class="section-header">
+            <div class="title-container">
+                <h2 class="section-title">CONTINUE WATCHING</h2>
+                <div class="section-subtitle">Continue Where You Left Off</div>
+            </div>
+            <div class="section-actions">
+                <button class="clear-history-btn"><i class="fas fa-trash"></i><span>Clear History</span></button>
+            </div>
+        </div>
+
+        <div class="continue-wrapper">
+            <button class="continue-nav-btn prev-btn" aria-label="Previous">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="continue-container">
+                <!--continue watching item-->
+                <div class="continue-item" data-id="1">
+                    <div class="ep-badge">S4 ep67</div>
+                    <div class="resume-time">Resume at 17:30</div>
+
+                    <div class="movie-card">
+                        <img src="assets/mylittleponyL.jpg" alt="My Little Pony poster" class="movie-poster">
+
+                        <div class="movie-overlay">
+                            <div class="movie-info-container">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">My Little Pony</h3>
+                                    <div class="watch-date">Last Watched: Yesterday</div>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="resume-btn" title="Resume"><i class="fas fa-play"></i></button>
+                                    <button class="remove-btn" title="Remove"><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-info">
+                                    <span class="progress-label">Continue Watching</span>
+                                    <span class="progress-percentage">67%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 67%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="continue-item" data-id="2">
+                    <div class="ep-badge">S2 - ep6</div>
+                    <div class="resume-time">Resume at 37:30</div>
+
+                    <div class="movie-card">
+                        <img src="assets/moneyhesitL.jpg" alt="" class="movie-poster">
+
+                        <div class="movie-overlay">
+                            <div class="movie-info-container">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Money Heist</h3>
+                                    <div class="watch-date">Last Watched: Wednesday</div>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="resume-btn" title="Resume"><i class="fas fa-play"></i></button>
+                                    <button class="remove-btn" title="Remove"><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-info">
+                                    <span class="progress-label">Continue Watching</span>
+                                    <span class="progress-percentage">5%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 5%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="continue-item" data-id="3">
+                    <div class="ep-badge">S4 - ep1</div>
+                    <div class="resume-time">Resume at 15:10</div>
+
+                    <div class="movie-card">
+                        <img src="assets/SmurfsL.jpg" alt="" class="movie-poster">
+
+                        <div class="movie-overlay">
+                            <div class="movie-info-container">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">The Smurfs</h3>
+                                    <div class="watch-date">Last Watched: wednesday</div>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="resume-btn" title="Resume"><i class="fas fa-play"></i></button>
+                                    <button class="remove-btn" title="Remove"><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-info">
+                                    <span class="progress-label">Continue Watching</span>
+                                    <span class="progress-percentage">21%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 21%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="continue-item" data-id="4">
+                    <div class="ep-badge">Movie 1</div>
+                    <div class="resume-time">Resume at 1:01:10</div>
+
+                    <div class="movie-card">
+                        <img src="assets/ITL.jpg" alt="" class="IT movie-poster">
+
+                        <div class="movie-overlay">
+                            <div class="movie-info-container">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">IT</h3>
+                                    <div class="watch-date">Last Watched: Tuesday</div>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="resume-btn" title="Resume"><i class="fas fa-play"></i></button>
+                                    <button class="remove-btn" title="Remove"><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-info">
+                                    <span class="progress-label">Continue Watching</span>
+                                    <span class="progress-percentage">51%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 51%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue-item" data-id="5">
+                    <div class="ep-badge">S1 - ep12</div>
+                    <div class="resume-time">Resume at 21:30</div>
+
+                    <div class="movie-card">
+                        <img src="assets/AkamegakillL.jpg" alt="Akame Ga Kill -poster" class="movie-poster">
+
+                        <div class="movie-overlay">
+                            <div class="movie-info-container">
+                                <div class="movie-info">
+                                    <h3 class="movie-title">Akame Ga Kill</h3>
+                                    <div class="watch-date">Last Watched: Friday</div>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="resume-btn" title="Resume"><i class="fas fa-play"></i></button>
+                                    <button class="remove-btn" title="Remove"><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-info">
+                                    <span class="progress-label">Continue Watching</span>
+                                    <span class="progress-percentage">90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="continue-nav-btn next-btn" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+        </div>
+    </section>
+
+    <!--recommendation section-->
+    <section class="recommendation-section">
+        <div class="section-header">
+            <div class="title-container">
+                <h2 class="section-title">RECOMMENDED FOR YOU</h2>
+                <div class="section-subtitle">Based On Your Watch History And Preferences</div>
+            </div>
+            <div class="section-actions">
+                <button class="refresh-recommendations-btn"><i class="fas fa-sync-alt"></i><span>Refresh</span></button>
+            </div>
+        </div>
+
+        <div class="recommended-container">
+            <!--recommended item-->
+            <div class="recommended-item" data-id="1">
+                <div class="movie-card">
+                    <img src="assets/ricknmortyP.jpg" alt="Rick And Morty Poster" class="movie-poster">
+                    <div class="movie-overlay">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Rick And Morty</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i>9.0</span>
+                                <span class="year">2013</span>
+                            </div>
+                            <div class="match-percentage">67% match</div>
+                            <div class="reasons">
+                                <span class="reason-tag">Dark Comedy</span>
+                                <span class="reason-tag">Action</span>
+                                <span class="reason-tag">Thriller</span>
+                                <span class="reason-tag">Satire</span>
+                            </div>
+                        </div>
+                        <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+                <div class="recommendation-actions">
+                    <button class="like-btn" title="recommend more like this">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <button class="dislike-btn" title="not interested">
+                        <i class="fas fa-heart-broken"></i>
+                    </button>
+                    <button class="bookmark-btn" title="Add to bookmarks">
+                        <i class="fas fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="recommended-item" data-id="2">
+                <div class="movie-card">
+                    <img src="assets/snowfallP.jpg" alt="Snowfall Poster" class="movie-poster">
+                    <div class="movie-overlay">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Snowfall</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i>8.5</span>
+                                <span class="year">2017</span>
+                            </div>
+                            <div class="match-percentage">90% match</div>
+                            <div class="reasons">
+                                <span class="reason-tag">Drug Crime</span>
+                                <span class="reason-tag">Gangster</span>
+                                <span class="reason-tag">Crime</span>
+                                <span class="reason-tag">Psychological Drama</span>
+                            </div>
+                        </div>
+                        <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+                <div class="recommendation-actions">
+                    <button class="like-btn" title="recommend more like this">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <button class="dislike-btn" title="not interested">
+                        <i class="fas fa-heart-broken"></i>
+                    </button>
+                    <button class="bookmark-btn" title="Add to bookmarks">
+                        <i class="fas fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="recommended-item" data-id="1">
+                <div class="movie-card">
+                    <img src="assets/BleachP.jpg" alt="Bleach Poster" class="movie-poster">
+                    <div class="movie-overlay">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Bleach</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i>9.0</span>
+                                <span class="year">2007</span>
+                            </div>
+                            <div class="match-percentage">97% match</div>
+                            <div class="reasons">
+                                <span class="reason-tag">Anime</span>
+                                <span class="reason-tag">Action</span>
+                                <span class="reason-tag">Fantasy</span>
+                                <span class="reason-tag">Supernatural</span>
+                            </div>
+                        </div>
+                        <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+                <div class="recommendation-actions">
+                    <button class="like-btn" title="recommend more like this">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <button class="dislike-btn" title="not interested">
+                        <i class="fas fa-heart-broken"></i>
+                    </button>
+                    <button class="bookmark-btn" title="Add to bookmarks">
+                        <i class="fas fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="recommended-item" data-id="1">
+                <div class="movie-card">
+                    <img src="assets/TWDP.jpg" alt="The Walking Dead Poster" class="movie-poster">
+                    <div class="movie-overlay">
+                        <div class="movie-info">
+                            <h3 class="movie-title">The Walking Dead</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i>8.1</span>
+                                <span class="year">2010</span>
+                            </div>
+                            <div class="match-percentage">82% match</div>
+                            <div class="reasons">
+                                <span class="reason-tag">Psychological Drama</span>
+                                <span class="reason-tag">Horror</span>
+                                <span class="reason-tag">Thriller</span>
+                                <span class="reason-tag">Zombie</span>
+                            </div>
+                        </div>
+                        <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+                <div class="recommendation-actions">
+                    <button class="like-btn" title="recommend more like this">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <button class="dislike-btn" title="not interested">
+                        <i class="fas fa-heart-broken"></i>
+                    </button>
+                    <button class="bookmark-btn" title="Add to bookmarks">
+                        <i class="fas fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="recommended-item" data-id="1">
+                <div class="movie-card">
+                    <img src="assets/MHAp.jpg" alt="My Hero Academia" class="movie-poster">
+                    <div class="movie-overlay">
+                        <div class="movie-info">
+                            <h3 class="movie-title">My Hero Academia</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i>8.2</span>
+                                <span class="year">2016</span>
+                            </div>
+                            <div class="match-percentage">94% match</div>
+                            <div class="reasons">
+                                <span class="reason-tag">Anime</span>
+                                <span class="reason-tag">Superhero</span>
+                                <span class="reason-tag">Action</span>
+                                <span class="reason-tag">Fantasy</span>
+                            </div>
+                        </div>
+                        <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+                <div class="recommendation-actions">
+                    <button class="like-btn" title="recommend more like this">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <button class="dislike-btn" title="not interested">
+                        <i class="fas fa-heart-broken"></i>
+                    </button>
+                    <button class="bookmark-btn" title="Add to bookmarks">
+                        <i class="fas fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="recommended-item" data-id="6">
+                <div class="movie-card">
+                    <img src="assets/houseofdragonsP.jpg" alt="House Of Dragons Poster" class="movie-poster">
+                    <div class="movie-overlay">
+                        <div class="movie-info">
+                            <h3 class="movie-title">House Of Dragons</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i>8.3</span>
+                                <span class="year">2022</span>
+                            </div>
+                            <div class="match-percentage">37% match</div>
+                            <div class="reasons">
+                                <span class="reason-tag">Political Drama</span>
+                                <span class="reason-tag">Sword & Sorcery</span>
+                                <span class="reason-tag">Action</span>
+                                <span class="reason-tag">Romance</span>
+                            </div>
+                        </div>
+                        <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+                <div class="recommendation-actions">
+                    <button class="like-btn" title="recommend more like this">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <button class="dislike-btn" title="not interested">
+                        <i class="fas fa-heart-broken"></i>
+                    </button>
+                    <button class="bookmark-btn" title="Add to bookmarks">
+                        <i class="fas fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="icon"><i class="fas fa-play"></i></div>
+                        <span>Streamify</span>
+                    </div>
+                    <p class="footer-text">
+                        Unlimited Movies, TV shows, and more. Watch anywhere and on any device. 
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" title="Instagra,">
+                            <i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="TikTok">
+                            <i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link" title="Youtube">
+                            <i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4 class="link-title">Genres</h4>
+                        <a href="#" class="footer-link"><i class="fas fa-ghost"></i>Horror</a>
+                        <a href="#" class="footer-link"><i class="fas fa-fist-raised"></i>Action</a>
+                        <a href="#" class="footer-link"><i class="fas fa-heart"></i>Romance</a>
+                        <a href="#" class="footer-link"><i class="fas fa-laugh"></i>Comedy</a>
+                        <a href="#" class="footer-link"><i class="fas fa-bars"></i>View All</a>
+                    </div>
+
+                    <div class="link-column">
+                        <h4 class="link-title">Account</h4>
+                        <a href="#" class="footer-link"><i class="fas fa-user"></i>Profile</a>
+                        <a href="#" class="footer-link"><i class="fas fa-cog"></i>Settings</a>
+                        <a href="#" class="footer-link"><i class="fas fa-question-circle"></i>Help</a>
+                        <a href="#" class="footer-link"><i class="fas fa-envelope"></i>Contact Us</a>
+                        <a href="#" class="footer-link"><i class="fas fa-sign-out-alt"></i>Sign Out</a>
+                    </div>
+
+                    <div class="link-column">
+                        <h4 class="link-title">About</h4>
+                        <a href="#" class="footer-link"><i class="fas fa-shield-alt"></i>Privacy</a>
+                        <a href="#" class="footer-link"><i class="fas fa-file-contract"></i>Terms Of Service</a>
+                        <a href="#" class="footer-link"><i class="fas fa-cookie"></i>Cookies</a>
+                        <a href="#" class="footer-link"><i class="fas fa-info-circle"></i>More About Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-seperator"></div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>2025 Streamify. ALL RIGHTS RESERVED.</p>
+                    <p>This Site is for a university project</p>
+                </div>
+                <div class="footer-actions">
+                    <select class="language-selector">
+                        <option value="en">🌐 English</option>
+                        <option value="en">🌐 English</option>
+                        <option value="en">🌐 English</option>
+                        <option value="en">🌐 English</option>
+                        <option value="en">🌐 English</option>
+                    </select>
+
+                    <button class="to-top" title="Back To Top">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+
+    
+
+    <script>
+        //main container functionality
+        document.addEventListener('DOMContentLoaded', function(){
+            //getting all the container elements
+            const slides = document.querySelectorAll('.container-slide');
+            const indicators = document.querySelectorAll('.indicator');
+            const previousBtn = document.querySelector('.main-previous');
+            const nextBtn = document.querySelector('.main-next');
+
+            let currentSlide = 0;
+            let slideInterval;
+            const slideDuration = 2670; //2.67 seconds per slide
+
+            //function to go to a specific slide
+            function goToSlide(slideIndex) {
+                //this removes active class from all slides and indicators
+                slides.forEach(slide => slide.classList.remove('active', 'prev'));
+                indicators.forEach(indicator => indicator.classList.remove('active'));
+
+                //updating the current slide
+                currentSlide = slideIndex;
+
+                if (currentSlide <0) currentSlide = slides.length - 1;
+                if (currentSlide >= slides.length) currentSlide = 0;
+
+                //this adds the active class to the current slide and indicator
+                slides[currentSlide].classList.add('active');
+                indicators[currentSlide].classList.add('active');
+
+                //this adds the previous class to previous slide for animation
+                let previousIndex = currentSlide - 1;
+                if (previousIndex < 0) previousIndex = slides.length - 1;
+                slides[previousIndex].classList.add('prev');
+            }
+            //this function allows user to go next slide
+            function nextSlide() {
+                goToSlide(currentSlide + 1);
+            }
+
+            //this function allows the user to go to the previous slide
+            function prevSlide() {
+                goToSlide(currentSlide -1);
+            }
+
+            //this function starts auto rotation of slides
+            function startAutoSlide() {
+                slideInterval = setInterval(nextSlide, slideDuration);
+            }
+
+            //this function stops auto rotation when user interacts
+            function stopAutoSlide() {
+                clearInterval(slideInterval);
+            }
+
+            //initilise the container
+            function initcontainer() {
+                //setting the first slide
+                goToSlide(0);
+
+                //starting the auto rotating
+                startAutoSlide();
+
+                //adding event listeners
+                nextBtn.addEventListener('click', function() {
+                    stopAutoSlide();
+                    nextSlide();
+                    startAutoSlide();
+                });
+
+                previousBtn.addEventListener('click', function() {
+                    stopAutoSlide();
+                    prevSlide();
+                    startAutoSlide();
+                });
+
+                //adding click events to the indicators
+                indicators.forEach((indicator, index) => {
+                    indicator.addEventListener('click', function() {
+                        stopAutoSlide();
+                        goToSlide(index);
+                        startAutoSlide();
+                    });
+                });
+
+                //pausing when user hovers
+                const mainSection = document.querySelector('.main');
+                mainSection.addEventListener('mouseenter', stopAutoSlide);
+                mainSection.addEventListener('mouseleave', startAutoSlide);
+
+                //navigation using keyboard 
+                document.addEventListener('keydown', function(event) {
+                    if (event.key === 'ArrowLeft') {
+                        stopAutoSlide();
+                        previousSlide();
+                        startAutoSlide();
+                    } else if (event.key === 'ArrowRight') {
+                        stopAutoSlide();
+                        nextSlide();
+                        startAutoSlide();
+                    }
+                });
+            }
+
+            //initialising when the page loads
+            initcontainer();
+        });
+
+        //back to top button functionallity
+        const toTopBtn = document.querySelector('.to-top');
+        if (toTopBtn) {
+            toTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    toTopBtn.style.opacity = '1';
+                    toTopBtn.style.visibility = 'visible';
+                } else {
+                    toTopBtn.style.opacity = '0';
+                    toTopBtn.style.visibility = 'hidden';
+                }
+            });
+
+            toTopBtn.style.opacity = '0';
+            toTopBtn.style.visibility - 'hidden';
+            toTopBtn.style.transition = 'opacity 0.3s ease, visibilty 0.3s ease';
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            function setupNavigation(containerSelector, prevBtnSelector, nextBtnSelector, scrollAmount = 300) {
+                
+            const container = document.querySelector(containerSelector);
+            const prevBtn = document.querySelector(prevBtnSelector);
+            const nextBtn = document.querySelector(nextBtnSelector);
+
+            if (!container || !prevBtn || !nextBtn) return null;
+
+            //next button click
+            nextBtn.addEventListener('click', function() {
+                container.scrollBy({
+                    left:scrollAmount, behavior: 'smooth'
+                });
+                updateBtnStates();
+            });
+
+            //previous button click
+            prevBtn.addEventListener('click', function() {
+                container.scrollBy({
+                    left: -scrollAmount, behavior: 'smooth'
+                });
+                updateBtnStates();
+            });
+
+            function updateBtnStates() {
+                const scrollLeft = container.scrollLeft;
+                const scrollWidth = container.scrollWidth;
+                const clientWidth = container.clientWidth;
+
+                //disablind the prev button if itsa t the start
+                prevBtn.classList.toggle('disabled', scrollLeft <= 10);
+
+                //disablind the next button if itsa t the end
+                nextBtn.classList.toggle('disabled', scrollLeft + clientWidth >= scrollWidth -10);
+            }
+
+            container.addEventListener('scroll', updateBtnStates);
+
+            updateBtnStates();
+
+            return updateBtnStates;
+        }
+
+        setupNavigation('.top10-container', '.top10-nav-btn.prev-btn', '.top10-nav-btn.next-btn', 750);
+
+        setupNavigation('.continue-container', '.continue-nav-btn.prev-btn', '.continue-nav-btn.next-btn', 750);
+    }); 
+
+    
+        
+    </script>
+</body>
+</html>

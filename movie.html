@@ -1,0 +1,2478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font awesome importing-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--linking external CSS stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Icon-->
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <!--title-->
+    <title>Movie Details - Streamify</title>
+</head>
+<body>
+    <!--main content-->
+    <main class="details-page">
+        <section class="main-landscape">
+            <div class="back-btn-container">
+                <a href="index.html" class="back-btn"> <i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="trailer-background">
+                <video class="trailer-video" autoplay muted loop playsinline>
+                    <source src="assets/videos/Stranger Things 5 _ Official Trailer _ Netflix.mp4" type="video/mp4">
+                    Your Browser does not support this video tag
+                </video>
+                <div class="trailer-overlay"></div>
+            </div>
+
+            <!--main content details container-->
+            <div class="details-main-content">
+                <div class="details-main-info">
+                    <h1 class="movie-title">Stranger Things</h1>
+                    <div class="movie-meta">
+                        <div class="rating-badge">
+                            <i class="fas fa-star"></i>
+                            <span>10/10</span>
+                        </div>
+                        <span class="year">2025</span>
+                        <span class="duration">55m</span>
+                        <span class="quality">4k/HD</span>
+                    </div>
+                    <div class="movie-tags">
+                        <span class="tag">Action</span>
+                        <span class="tag">Action</span>
+                        <span class="tag">Action</span>
+                        <span class="tag">Action</span>
+                    </div>
+
+                    <p class="movie-description"> Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Dignissimos asperiores deserunt et ad doloribus
+                        rem tempora. Itaque ullam non ea fugiat, quia provident odit
+                        blanditiis doloribus id possimus maiores? Necessitatibus?</p>
+
+                        <div class="main-btns">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>Play Now
+                            </button>
+
+                            <button class="add-bookmark-btn">
+                                <i class="fas fa-bookmark"></i>
+                                Add To My Bookmarks
+                            </button>
+
+                            <button class="share-btn">
+                                <i class="fas fa-share"></i>
+                                Share
+                            </button>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!--episode selector section container-->
+        <section class="episode-selector-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Episodes</h2>
+                    <div class="season-info">
+                        <span class="current-season">Season 1</span>
+                        <span class="episode-count">8 Episodes</span>
+                    </div>
+                </div>
+
+                <div class="episode-selector">
+                    <div class="season-selector-container">
+                        <div class="season-selector">
+                            <label for="season"><i class="fas fa-tv"></i>Season:</label>
+                            <select id="season" class="season-dropdown">
+                                <option value="1" selected>Season 1 (2018)</option>
+                                <option value="2">Season 2 (2019)</option>
+                                <option value="3">Season 3 (2020)</option>
+                                <option value="4">Season 4 (2022)</option>
+                                <option value="5">Season 5 (2025)</option>
+                            </select>
+                        </div>
+
+                        <div class="sort-options">
+                            <button class="sort-btn active" data-sort = "episode">
+                                <i class="fas fa-sort-numeric-down"></i>Episode Order
+                            </button>
+                            <button class="sort-btn" data-sort="date">
+                                <i class="fas fa-calender-alt"></i>Release Date
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--episode list container-->
+                    <div class="episode-list">
+                        <div class="season-episodes" data-season="1" style="display: block;">
+                            <!--episode 1-->
+                             <div class="episode-card" data-episode="1" data-date="2016-07-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S1E1.jpg" alt="Episode 1 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="1">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter One: The Vanishing of Will Byers</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.5</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>jul 15, 2016</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Will Goes missing after a night of Dungeons & Dragons with his friends.
+                                        Meanwhile, s mysterious girl with telekinetic powers escapes from a lab.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Episode Completed</span>
+                                            <span class="progress-percent">98%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 98%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-redo"></i>Replay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Episode 2-->
+                            <div class="episode-card" data-episode="2" data-date="2016-07-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S1E2.jpg" alt="Episode 2 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="2">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Two: The Weirdo on Maple Street</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.3</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>jul 15, 2016</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Lucas, Mike and Dustin try to talk to the girl they found in the woods.
+                                        Meanwhile, Hopper questions an anxious Joyce about an unsettling phone call.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Episode Completed</span>
+                                            <span class="progress-percent">95%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 95%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-redo"></i>Replay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="episode-card" data-episode="3" data-date="2016-07-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S1E3.jpg" alt="Episode 3 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="3">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Three: Holly, Jolly</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.8</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>jul 15, 2016</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        An increasingly concerned Nancy looks for Barb and finds out what
+                                        Jonathan's been up to. Joyce is convinced Will is trying to talk to her.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Episode Completed</span>
+                                            <span class="progress-percent">93%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 93%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-redo"></i>Replay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="episode-card" data-episode="4" data-date="2016-07-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S1E4.jpg" alt="Episode 4 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="4">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Four: The Body</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.9</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>jul 15, 2016</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Refusing to believe Will is dead, Joyce tries to connect with her son.
+                                        The boys give Eleven a makeover. Jonathan and Nancy form an unlikely alliance.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Episode Completed</span>
+                                            <span class="progress-percent">99%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 99%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="episode-card" data-episode="5" data-date="2016-07-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S1E5.jpg" alt="Episode 5 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="5">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Five: The Flea and the Acrobat</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.6</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>jul 15, 2016</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Hopper breaks into the lab to find the truth about Will's death.
+                                        The boys try to locate the "gate" that will take them to Will.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Episode Completed</span>
+                                            <span class="progress-percent">89%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 89%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-redo"></i>Replay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="episode-card" data-episode="6" data-date="2016-07-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S1E6.jpg" alt="Episode 6 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="6">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Six: The Monster</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.8</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>jul 15, 2016</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        A frantic Jonathan looks for Nancy in the darkness, but Steve's looking for her, too.
+                                        Hopper and Joyce uncover the truth about the lab's experiments.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Episode Completed</span>
+                                            <span class="progress-percent">99%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 99%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-redo"></i>Replay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="episode-card" data-episode="7" data-date="2016-07-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S1E7.jpg" alt="Episode 7 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="7">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Seven: The Bathtub</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>9.0</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>jul 15, 2016</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        The government comes searching for Eleven. 
+                                        Eleven looks for Will and Barb in the Upside Down.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Episode Completed</span>
+                                            <span class="progress-percent">95%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 95%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-redo"></i>Replay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="episode-card" data-episode="8" data-date="2016-07-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S1E8.jpeg" alt="Episode 8 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="7">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Eight: The Upside Down</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>9.3</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>jul 15, 2016</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Joyce and Hopper are taken in for questioning.
+                                        Nancy and Jonathan prepare to fight the monster and save will
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Episode Completed</span>
+                                            <span class="progress-percent">95%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 95%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-redo"></i>Replay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    <!--SEASON 2 hidden-->
+                    <div class="season-episodes" data-season="2" style="display: none;">
+                        <!--episode 1-->
+                        <div class="episode-card" data-episode="1" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S2E1.jpeg" alt="Episode 1 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="1">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter One: MADMAX</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.1</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Oct 27, 2017</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        As the town preps for Halloween, a high-scoring rival shakes things up 
+                                        at the arcade, and a skeptical Hopper inspects a field of rotting pumpkins.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">95%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 95%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-redo"></i>Replay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--episode 2-->
+                            <div class="episode-card" data-episode="2" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S2E2.webp" alt="Episode 2 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="2">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Two: Trick or Treat, Freak</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.2</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Oct 27, 2017</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        After Will sees something terrible on trick-or-treat night,
+                                        Mike wonders whether Eleven's still out there. Nancy wrestles
+                                        with the truth about Barb.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Episode Completed</span>
+                                            <span class="progress-percent">97%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 97%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-redo"></i>Replay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--episode 3-->
+
+                            <div class="episode-card" data-episode="3" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S2E3.jpg" alt="Episode 3 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="3">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Three: The Pollywog</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.5</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Oct 27, 2017</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Dustin adopts a strange new pet, and Eleven grows increasingly impatient.
+                                        A well-meaning Bob urges Will to stand up to his fears.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Episode Completed</span>
+                                            <span class="progress-percent">95%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 95%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-redo"></i>Replay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--episode 4-->
+                            <div class="episode-card" data-episode="4" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S2E4.jpg" alt="Episode 4 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="4">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Four: Will the Wise</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.5</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Oct 27, 2017</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        An ailing Will opens up to Joyce -- with disturbing results.
+                                        While Hopper digs for the truth, Eleven unearths a surprising discovery.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Episode Completed</span>
+                                            <span class="progress-percent">95%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 67%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-redo"></i>Replay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--episode 5-->
+
+                            <div class="episode-card" data-episode="5" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S2E5.jpg" alt="Episode 5 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="5">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Five: Dig Dug</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.8</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Oct 27, 2017</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Nancy and Jonathan swap conspiracy theories with a new ally
+                                        as Eleven searches for someone from her past. "Bob the Brain"
+                                        tackles a difficult problem.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Episode Completed</span>
+                                            <span class="progress-percent">99%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 99%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-redo"></i>Replay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--episode 6-->
+                            <div class="episode-card" data-episode="6" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S2E6.jpeg" alt="Episode 6 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="6">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Six: The Spy</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>9.1</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Oct 27, 2017</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Will's connection to a shadowy evil grows stronger but
+                                        no one's quite sure how to stop it. Elsewhere, Dustin
+                                        and Steve forge an unlikely bond.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Episode Completed</span>
+                                            <span class="progress-percent">99%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 99%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-redo"></i>Replay
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--episode 7-->
+                            <div class="episode-card" data-episode="7" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/s2E7.jpg" alt="Episode 7 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="7">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Seven: The Lost Sister</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>6.0</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Oct 27, 2017</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Psychic visions draw Eleven to a band of violent outcasts
+                                        and an angry girl with a shadowy past.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 67%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--episode 8-->
+                            <div class="episode-card" data-episode="8" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S2e8.jpg" alt="Episode 8 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="8">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Eight: The Mind Flayer</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>9.2</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Oct 27, 2017</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        An unlikely hero steps forward when a deadly development puts
+                                        the Hawkins lab on lockdown, trapping Will and several others inside.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 45%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Episode 9-->
+                            <div class="episode-card" data-episode="9" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S2E9.jpg" alt="Episode 9 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="9">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Nine: The Gate</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>9.3</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Oct 27, 2017</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Eleven makes plans to finish what she started while the 
+                                        survivors turn up the heat on the monstrous force that's
+                                        holding Will hostage.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 45%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    </div>
+                    <!--season 3 episodes-->
+                    <div class="season-episodes" data-season="3" style="display: none;">
+                        <!--Episode 1-->
+                            <div class="episode-card" data-episode="1" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/s3e1.jpg" alt="Episode 1 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="1">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter One: Suzie, Do You Copy?</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>7.8</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Jul 4, 2019</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Summer brings new jobs and budding romance. But the mood
+                                        shifts when Dustin's radio picks up a Russian broadcast,
+                                        and Will senses something is wrong.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 45%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Episode 2-->
+                            <div class="episode-card" data-episode="2" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/s3e2.jpeg" alt="Episode 2 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="2">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Two: The Mall Rats</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>7.9</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Jul 4, 2019</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Nancy and Jonathan follow a lead, Steve and Robin sign on to 
+                                        a secret mission, and Max and Eleven go shopping. A rattled 
+                                        Billy has troubling visions.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 45%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!--Episode 3-->
+                            <div class="episode-card" data-episode="3" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S3e3.jpg" alt="Episode 3 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="3">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Three: The Case of the Missing Lifeguard</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.2</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Jul 4, 2019</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        With El and Max looking for Billy, Will declares a day without girls. 
+                                        Steve and Dustin go on a stakeout, and Joyce and Hopper return to Hawkins Lab.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 45%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--episode 4-->
+                            <div class="episode-card" data-episode="4" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S3e4.jpg" alt="Episode 4 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="4">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Four: The Sauna Test</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.9</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Jul 4, 2019</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        A code red brings the gang back together to face a frighteningly 
+                                        familiar evil. Karen urges Nancy to keep digging, and Robin finds
+                                         a useful map.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 67%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Episode 5-->
+                            <div class="episode-card" data-episode="5" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S3e5.jpg" alt="Episode 5 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="5">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Five: The Flayed</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.5</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Jul 4, 2019</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Strange surprises lurk inside an old farmhouse and deep beneath the 
+                                        Starcourt Mall. Meanwhile, the Mind Flayer is gathering strength.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 67%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Episode 6-->
+                            <div class="episode-card" data-episode="6" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S3e6.jpg" alt="Episode 6 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="6">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Six: E Pluribus Unum</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.5</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Jul 4, 2019</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Dr. Alexei reveals what the Russians have been building, 
+                                        and Eleven sees where Billy has been. Dustin and Erica stage a daring rescue.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 67%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Episdoe 7-->
+                            <div class="episode-card" data-episode="7" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/S3e7.jpg" alt="Episode 7 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="7">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Seven: The Bite</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.7</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Jul 4, 2019</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        With time running out - and an assassin close behind - 
+                                        Hopper's crew races back to Hawkins, where El and the 
+                                        kids are preparing for war.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 67%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Episode 8-->
+                            <div class="episode-card" data-episode="8" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/s3e8.jpg" alt="Episode 8 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="8">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Eight: The Battle of Starcourt</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>9.2</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Jul 4, 2019</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Terror reigns in the food court when the Mind Flayer comes to collect. 
+                                        But down below, in the dark, the future of the world is at stake.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 67%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+
+                    <!--season 4 episdoes-->
+                    <div class="season-episodes" data-season="4" style="display: none;">
+                        <!--Episode 1-->
+                        <div class="episode-card" data-episode="1" data-date="2022-5-27">
+                            <div class="episode-left">
+                                <div class="episode-num">
+                                </div>
+                                <div class="episode-preview">
+                                    <img src="assets/S4e1.jpg" alt="Episode 1 Poster" class="episode-thumbnail">
+                                    <div class="play-overlay">
+                                        <button class="play-ep-btn" data-episode="1">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="episode-details">
+                                <div class="episode-header">
+                                    <h3 class="episode-title">Chapter One: The Hellfire Club</h3>
+                                    <div class="episode-meta">
+                                        <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                        <span class="rating"><i class="fas fa-star"></i>8.1</span>
+                                        <span class="date"><i class="fas fa-calendar"></i>May 27, 2022</span>
+                                    </div>
+                                </div>
+                                
+                                <p class="episode-description">
+                                        Still reeling from the events last year, the gang tries to move on 
+                                        with their lives. However, a threat is brewing both on Earth and the 
+                                        Upside Down.
+                                </p>
+
+                                <div class="episode-actions">
+                                    <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                    <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                </div>
+
+                                <div class="episode-progress">
+                                    <div class="progress-information">
+                                        <span class="progress-text">Continue Watching</span>
+                                        <span class="progress-percent">45%</span>
+                                    </div>
+                                    <div class="movie-progress-bar">
+                                        <div class="movie-progress-fill" style="width: 67%;"></div>
+                                    </div>
+                                    <button class="resume-btn">
+                                        <i class="fas fa-play"></i>Resume
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                            <!--episode 2-->
+                            <div class="episode-card" data-episode="2" data-date="2022-5-27">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/s4e2.jpg" alt="Episode 2 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="2">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Two: Vecna's Curse</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.1</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>May 27, 2022</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        A plane brings Mike to California -- and a dead body brings 
+                                        Hawkins to a halt. Nancy goes looking for leads. A shaken 
+                                        Eddie tells the gang what he saw.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 67%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--episode 3-->
+
+                            <div class="episode-card" data-episode="3" data-date="2022-5-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/s4e3.jpg" alt="Episode 3 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="3">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Three: The Monster and the Superhero</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.3</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>May 27, 2022</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Murray and Joyce fly to Alaska, and El faces serious consequences. 
+                                        Robin and Nancy dig up dirt on Hawkins' demons. Dr. Owens delivers sobering news.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 67%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--episode 4-->
+                            <div class="episode-card" data-episode="4" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/s4e4.jpg" alt="Episode 4 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="4">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Four: Dear Billy</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>9.5</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>May 27, 2022</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Max is in grave danger - and running out of time. A patient at 
+                                        Pennhurst Asylum has visitors. Elsewhere, in Russia, Hopper is hard at work.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 67%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--episode 5-->
+
+                            <div class="episode-card" data-episode="5" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/s4e5.jpg" alt="Episode 5 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="5">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Five: The Nina Project</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.1</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>May 27, 2022</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Owens takes El to Nevada, where she's forced to confront her past, 
+                                        while the Hawkins kids comb a crumbling house for clues. 
+                                        Vecna claims another victim.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 67%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--episode 6-->
+                            <div class="episode-card" data-episode="6" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/s4e6.jpeg" alt="Episode 6 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="6">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Six: The Dive</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.5</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>May 27, 2022</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Behind the Iron Curtain, a risky rescue mission gets underway. 
+                                        The California crew seeks help from a hacker. Steve takes one for the team.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 67%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--episode 7-->
+                            <div class="episode-card" data-episode="7" data-date="2022-5-28">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/s4e7.jpg" alt="Episode 7 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="7">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Seven: The Massacre at Hawkins Lab</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>9.6</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>May 27, 2022</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        As Hopper braces to battle a monster, Dustin dissects Vecna's motives 
+                                        -- and decodes a message from beyond. El finds strength in a distant memory.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 67%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--episode 8-->
+                            <div class="episode-card" data-episode="8" data-date="2022-5-27">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/s4e8.jpg" alt="Episode 8 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="8">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Eight: Papa</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.6</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>May 27, 2022</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Nancy has sobering visions, and El passes an important test. 
+                                        Back in Hawkins, the gang gathers supplies and prepares for battle.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 67%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Episode 9-->
+                            <div class="episode-card" data-episode="9" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                        <div class="ep-badge">New</div>
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/s439.jpeg" alt="Episode 9 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="9">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Nine: The Piggyback</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>9.1</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Oct 27, 2017</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        With selfless hearts and a clash of metal, heroes fight from every corner 
+                                        of the battlefield to save Hawkins - and the world itself.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Continue Watching</span>
+                                            <span class="progress-percent">45%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 67%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Resume
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <!--season 5-->
+                    <div class="season-episodes" data-season="5" style="display: none;">
+                        <!--Episode 1-->
+                        <!--Episode 1-->
+                            <div class="episode-card new" data-episode="1" data-date="2025-11-26">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                        <div class="ep-badge">New</div>
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/s5e1.jpeg" alt="Episode 1 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="1">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter One: The Crawl</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8,1</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Nov 26, 2025</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        November, 1987. The gang evades the military to scour the Upside Down 
+                                        for Vecna--but fails to notice a threat lurking closer to home.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Watch Episode</span>
+                                            <span class="progress-percent">0%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Play
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Episode 2-->
+                            <div class="episode-card new" data-episode="2" data-date="2025-11-26">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                        <div class="ep-badge">New</div>
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/s5e2.jpg" alt="Episode 2 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="2">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Two: The Vanishing of Holly Wheeler</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.5</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Nov 26, 2025</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        After a vicious attack at the Wheeler home, Mike and Nancy 
+                                        confront the cost of secrecy, while El and Hopper embark on a rescue mission.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Watch Episode</span>
+                                            <span class="progress-percent">0%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Play
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!--Episode 3-->
+                            <div class="episode-card new" data-episode="3" data-date="2025-11-26">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                        <div class="ep-badge">New</div>
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/s5e3.jpeg" alt="Episode 3 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="3">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Three: The Turnbow Trap</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.8</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Nov 26, 2025</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        Will gains unique insight into Vecna's next move, giving the 
+                                        crew an opportunity to set a trap. Holly explores her new surroundings.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Watch Episode</span>
+                                            <span class="progress-percent">0%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Play
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--episode 4-->
+                            <div class="episode-card new" data-episode="4" data-date="2025-11-26">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                        <div class="ep-badge">New</div>
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/s5e4.jpg" alt="Episode 4 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="4">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Four: Sorcerer</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>8.9</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Nov 26, 2025</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        The military tightens its grip on the town. Mike, Lucas, and Robin 
+                                        orchestrate a daring escape. El comes face-to-face with the enemy.
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+                                    <div class="episode-progress">
+                                        <div class="progress-information">
+                                            <span class="progress-text">Watch Episode</span>
+                                            <span class="progress-percent">0%</span>
+                                        </div>
+                                        <div class="movie-progress-bar">
+                                            <div class="movie-progress-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <button class="resume-btn">
+                                            <i class="fas fa-play"></i>Play
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Episode 5-->
+                            <div class="episode-card new" data-episode="5" data-date="2025-11-26">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/comingsoon.png" alt="Episode 5 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="5">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Five: Shock Jock</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>unrated</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Dec 25, 2025</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        UNRELEASED
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Episode 6-->
+                            <div class="episode-card new" data-episode="6" data-date="2025-12-25">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/comingsoon.png" alt="Episode 6 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="6">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Six: Escape from Camazotz</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>UNRATED</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Dec 25, 2025</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        UNRELEASED
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Episdoe 7-->
+                            <div class="episode-card new" data-episode="7" data-date="2025-12-25">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/comingsoon.png" alt="Episode 7 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="7">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Seven: The Bridge</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>UNRATED</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Dec 25, 2025</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        UNRELEASED
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Episode 8-->
+                            <div class="episode-card new" data-episode="8" data-date="2017-10-05">
+                                <div class="episode-left">
+                                    <div class="episode-num">
+                                    </div>
+                                    <div class="episode-preview">
+                                        <img src="assets/comingsoon.png" alt="Episode 8 Poster" class="episode-thumbnail">
+                                        <div class="play-overlay">
+                                            <button class="play-ep-btn" data-episode="8">
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-details">
+                                    <div class="episode-header">
+                                        <h3 class="episode-title">Chapter Eight: The Rightside Up</h3>
+                                        <div class="episode-meta">
+                                            <span class="duration"><i class="fas fa-clock"></i>55m</span>
+                                            <span class="rating"><i class="fas fa-star"></i>UNRATED</span>
+                                            <span class="date"><i class="fas fa-calendar"></i>Dec 25, 2025</span>
+                                        </div>
+                                    </div>
+                                
+                                    <p class="episode-description">
+                                        UNRELEASED
+                                    </p>
+
+                                    <div class="episode-actions">
+                                        <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i>Add to Bookmarks</button>
+                                        <button class="download-btn"><i class="fas fa-download"></i>Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+        </section>
+
+        <!--cast container-->
+        <section class="cast-selection">
+            <div class="container">
+                <h2 class="section-title">Cast</h2>
+                <div class="cast-container">
+                    <!--cast item-->
+                    <div class="cast-card">
+                        <div class="cast-img">
+                            <img src="assets/cast1.jpg" alt="actor name img">
+                        </div>
+                        <h3 class="cast-name">Millie Bobby Brown</h3>
+                        <p class="cast-role">Eleven</p>
+                    </div>
+
+                    <div class="cast-card">
+                        <div class="cast-img">
+                            <img src="assets/cast2.jpg" alt="actor name img">
+                        </div>
+                        <h3 class="cast-name">Finn Wolfhard</h3>
+                        <p class="cast-role">Mike Wheeler</p>
+                    </div>
+
+                    <div class="cast-card">
+                        <div class="cast-img">
+                            <img src="assets/cast3.jpg" alt="actor name img">
+                        </div>
+                        <h3 class="cast-name">Noah Schnapp</h3>
+                        <p class="cast-role">Will Byers</p>
+                    </div>
+
+                    <div class="cast-card">
+                        <div class="cast-img">
+                            <img src="assets/cast4.jpg" alt="actor name img">
+                        </div>
+                        <h3 class="cast-name">Caleb McLaughlin</h3>
+                        <p class="cast-role">Lucas Sinclair</p>
+                    </div>
+
+                    <div class="cast-card">
+                        <div class="cast-img">
+                            <img src="assets/cast5.jpg" alt="actor name img">
+                        </div>
+                        <h3 class="cast-name">Sadie Sink</h3>
+                        <p class="cast-role">Max Mayfield</p>
+                    </div>
+
+                    <div class="cast-card">
+                        <div class="cast-img">
+                            <img src="assets/cast11.jpg" alt="actor name img">
+                        </div>
+                        <h3 class="cast-name">Charlie Heaton</h3>
+                        <p class="cast-role">Jonathan Byers</p>
+                    </div>
+
+                    <div class="cast-card">
+                        <div class="cast-img">
+                            <img src="assets/cast10.jpg" alt="actor name img">
+                        </div>
+                        <h3 class="cast-name">Winona Ryder</h3>
+                        <p class="cast-role">Joyce Byers</p>
+                    </div>
+
+                    <div class="cast-card">
+                        <div class="cast-img">
+                            <img src="assets/cast12.jpg" alt="actor name img">
+                        </div>
+                        <h3 class="cast-name">Maya Hawke</h3>
+                        <p class="cast-role">Robin Buckley</p>
+                    </div>
+
+                    <div class="cast-card">
+                        <div class="cast-img">
+                            <img src="assets/cast18.jpg" alt="actor name img">
+                        </div>
+                        <h3 class="cast-name">Cara Buono</h3>
+                        <p class="cast-role">Karen Wheeler</p>
+                    </div>
+
+                    <div class="cast-card">
+                        <div class="cast-img">
+                            <img src="assets/cast13.jpg" alt="actor name img">
+                        </div>
+                        <h3 class="cast-name">Dacre Montogomery</h3>
+                        <p class="cast-role">Billy Hargrove</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="more-like-this-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">More Like This</h2>
+                    <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <div class="more-like-this-container">
+
+                    <!--recommendtaion item 1-->
+                    <div class="more-like-this-card">
+                        <div class="more-like-this-poster">
+                            <img src="assets/darkP.jpg" alt="poster" class="more-like-this-poster-img">
+                            <div class="poster-overlay">
+                                <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                                <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i></button>
+                            </div>
+                            <div class="content-badge">
+                                <span class="badge-text">TV SERIES</span>
+                            </div>
+                        </div>
+                        <div class="more-like-this-info">
+                            <h3 class="more-like-this-title">Dark</h3>
+                            <div class="more-like-this-meta">
+                                <span class="year">2017</span>
+                                <span class="seasons">3 Seasons</span>
+                                <span class="quality">4k/HD</span>
+                            </div>
+                            <div class="more-like-this-tags">
+                                <span class="tag">Psychological Drama</span>
+                                <span class="tag">Thriller</span>
+                                <span class="tag">Mystery</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Movie/series item 2-->
+                    <div class="more-like-this-card">
+                        <div class="more-like-this-poster">
+                            <img src="assets/Super8P.jpg" alt="Super 8 poster" class="more-like-this-poster-img">
+                            <div class="poster-overlay">
+                                <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                                <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i></button>
+                            </div>
+                            <div class="content-badge">
+                                <span class="badge-text">Movie</span>
+                            </div>
+                        </div>
+                        <div class="more-like-this-info">
+                            <h3 class="more-like-this-title">Super 8</h3>
+                            <div class="more-like-this-meta">
+                                <span class="year">2011</span>
+                                <span class="seasons"></span>
+                                <span class="quality">HD</span>
+                            </div>
+                            <div class="more-like-this-tags">
+                                <span class="tag">Action</span>
+                                <span class="tag">Sci-Fi</span>
+                                <span class="tag">Thriller</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--more like this item 3-->
+                    <div class="more-like-this-card">
+                        <div class="more-like-this-poster">
+                            <img src="assets/wednesday P.jpg" alt="Wednesday poster" class="more-like-this-poster-img">
+                            <div class="poster-overlay">
+                                <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                                <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i></button>
+                            </div>
+                            <div class="content-badge">
+                                <span class="badge-text">TV SERIES</span>
+                            </div>
+                        </div>
+                        <div class="more-like-this-info">
+                            <h3 class="more-like-this-title">Wednesday</h3>
+                            <div class="more-like-this-meta">
+                                <span class="year">2020</span>
+                                <span class="seasons">2 Seasons</span>
+                                <span class="quality">4k/HD</span>
+                            </div>
+                            <div class="more-like-this-tags">
+                                <span class="tag">Action</span>
+                                <span class="tag">Mystery</span>
+                                <span class="tag">Drama</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--More like this item 4-->
+                    <div class="more-like-this-card">
+                        <div class="more-like-this-poster">
+                            <img src="assets/E.tP.jpg" alt=" E.T. the Extra Terrestrial poster" class="more-like-this-poster-img">
+                            <div class="poster-overlay">
+                                <button class="play-btn-small"><i class="fas fa-play"></i></button>
+                                <button class="add-bookmark-btn"><i class="fas fa-bookmark"></i></button>
+                            </div>
+                            <div class="content-badge">
+                                <span class="badge-text">TV SERIES</span>
+                            </div>
+                        </div>
+                        <div class="more-like-this-info">
+                            <h3 class="more-like-this-title">E.T. the Extra Terrestrial</h3>
+                            <div class="more-like-this-meta">
+                                <span class="year">1982</span>
+                                <span class="seasons"></span>
+                                <span class="quality">480P</span>
+                            </div>
+                            <div class="more-like-this-tags">
+                                <span class="tag">Alien</span>
+                                <span class="tag">Sci-Fi</span>
+                                <span class="tag">Family</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="icon"><i class="fas fa-play"></i></div>
+                        <span>Streamify</span>
+                    </div>
+                    <p class="footer-text">
+                        Unlimited Movies, TV shows, and more. Watch anywhere and on any device. 
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" title="Instagra,">
+                            <i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="TikTok">
+                            <i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link" title="Youtube">
+                            <i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4 class="link-title">Genres</h4>
+                        <a href="#" class="footer-link"><i class="fas fa-ghost"></i>Horror</a>
+                        <a href="#" class="footer-link"><i class="fas fa-fist-raised"></i>Action</a>
+                        <a href="#" class="footer-link"><i class="fas fa-heart"></i>Romance</a>
+                        <a href="#" class="footer-link"><i class="fas fa-laugh"></i>Comedy</a>
+                        <a href="#" class="footer-link"><i class="fas fa-bars"></i>View All</a>
+                    </div>
+
+                    <div class="link-column">
+                        <h4 class="link-title">Account</h4>
+                        <a href="#" class="footer-link"><i class="fas fa-user"></i>Profile</a>
+                        <a href="#" class="footer-link"><i class="fas fa-cog"></i>Settings</a>
+                        <a href="#" class="footer-link"><i class="fas fa-question-circle"></i>Help</a>
+                        <a href="#" class="footer-link"><i class="fas fa-envelope"></i>Contact Us</a>
+                        <a href="#" class="footer-link"><i class="fas fa-sign-out-alt"></i>Sign Out</a>
+                    </div>
+
+                    <div class="link-column">
+                        <h4 class="link-title">About</h4>
+                        <a href="#" class="footer-link"><i class="fas fa-shield-alt"></i>Privacy</a>
+                        <a href="#" class="footer-link"><i class="fas fa-file-contract"></i>Terms Of Service</a>
+                        <a href="#" class="footer-link"><i class="fas fa-cookie"></i>Cookies</a>
+                        <a href="#" class="footer-link"><i class="fas fa-info-circle"></i>More About Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-seperator"></div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>2025 Streamify. ALL RIGHTS RESERVED.</p>
+                    <p>This Site is for a university project</p>
+                </div>
+                <div class="footer-actions">
+                    <select class="language-selector">
+                        <option value="en">🌐 English</option>
+                        <option value="en">🌐 English</option>
+                        <option value="en">🌐 English</option>
+                        <option value="en">🌐 English</option>
+                        <option value="en">🌐 English</option>
+                    </select>
+
+                    <button class="to-top" title="Back To Top">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        //a script for a season switcher
+        document.addEventListener('DOMContentLoaded', function() {
+            const seasonDropdown = document.getElementById('season');
+            const currentSeason = document.querySelector('.current-season');
+            const episodeCount = document.querySelector('.episode.count');
+            const allSeasonContainers = document.querySelectorAll('.season-episodes');
+
+            if (seasonDropdown) {
+                seasonDropdown.addEventListener('change', function() {
+                    const selectedValue = this.value;
+                    const selectedText = this.options[this.selectedIndex].text;
+
+                    const matchResult = selectedText.match(/season (\d+)/i);
+                    const seasonNumber = matchResult ? matchResult[1] : selectedValue;
+
+                    if (currentSeason) {
+                        currentSeason.textContent = `Season ${seasonNumber}`;
+                    }
+
+                    //this will update the episode count
+                    if (episodeCount) {
+                        const episodeCounts = {
+                            '1': '8 Episodes',
+                            '2': '9 Episodes',
+                            '3': '8 Episodes',
+                            '4': '9 Episodes',
+                            '5': '8 Episodes'
+                        };
+                        episodeCount.innerHTML = `<i class="fas fa-list-ol"></i> ${episodeCounts[selectedValue] || '8 Episodes'}`;
+                    }
+
+                    allSeasonContainers.forEach(container => {
+                        if(container.dataset.season === selectedValue) {
+                            container.style.display = 'block';
+
+                            container.style.opacity = '0';
+                            setTimeout(() => {
+                                container.style.opacity = '1';
+                            }, 10);
+                        } else {
+                            container.style.display = 'none';
+                        }
+                    });
+
+                    document.querySelector('.episode-selector-section').scrollIntoView({
+                        behavior: 'smooth', block:'start'
+                    });
+                });
+            }
+        })
+    </script>
+    
+</body>
+</html>

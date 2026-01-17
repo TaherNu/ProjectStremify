@@ -1,0 +1,445 @@
+        /*resetting default browser settings*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*styling the body*/
+        body {
+            background-color: #141414;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /*styling the main content container*/
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background-color: rgba(0,0,0,0.75);
+            border-radius: 8px;
+            padding: 60px 70px 40px;
+            box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+        }
+
+        /*styling the logo container*/
+        .logo{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /*styling the header*/
+        .logo h1 {
+            color: #e50914;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        /*styling the paragraph*/
+        .logo p {
+            color: #8c8c8c;
+            margin-top: 5px;
+            font-size: 1rem;
+        }
+
+        /*styling tabs container*/
+        .tabs {
+            display: flex;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #333333;
+        }
+
+        /*styling the tab container*/
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1.2rem;
+            font-weight: 500;
+            cursor: pointer;
+            color: #8c8c8c;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        /*styling the active tabs container color*/
+        .tab.active{
+            color: #ffffff;
+        }
+
+        /*adding a red line after the active tab*/
+        .tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #e50914;
+        }
+
+        /*styling the form container*/
+        .form-container {
+            transition: opacity 0.3s ease;
+        }
+
+        /*hiding the non-active form*/
+        .form {
+            display: none;
+        }
+
+        /*showing the active form*/
+        .form.active {
+            display: block;
+        }
+
+        /*styling the form heading*/
+        .form h2 {
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        /*styling the form group container*/
+        .form-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        /*styling the input elements inside the form group container*/
+        .form-group input {
+            width: 100%;
+            padding: 15px 20px;
+            background-color: #333333;
+            border: none;
+            border-radius: 4px;
+            color: #ffffff;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        /*styling the focus state*/
+        .form-group input:focus {
+            background-color: #454545;
+        }
+
+        /*styling the color of the placeholder*/
+        .form-group input::placeholder {
+            color: #8c8c8c;
+        }
+
+        /*styling the icon in the container*/
+        .form-group i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #8c8c8c;
+        }
+
+        /*styling the remember forgot container*/
+        .remember-forgot {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        /*styling the remember container*/
+        .remember {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        /*styling the input elements in the remember container*/
+        .remember input {
+            margin-right: 5px;
+            accent-color: #e50914;
+        }
+
+        /*styling the label elements inside the remember container*/
+        .remember label {
+            color: #b3b3b3;
+        }
+
+        /*styling the forgot container*/
+        .forgot {
+            color: #b3b3b3;
+            text-decoration: none;
+        }
+
+        /*hover effects*/
+        .forgot:hover {
+            text-decoration: underline;
+        }
+
+        /*styling the buttons*/
+        .btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #e50914;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            margin-bottom: 15px;
+            transition: background-color 0.3s;
+        }
+
+        /*hover effects*/
+        .btn:hover {
+            background-color: #f40612;
+        }
+
+        /*styling the form footer container*/
+        .form-footer {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            color: #8c8c8c;
+            font-size: 1rem;
+        }
+
+        /*styling the form footer link*/
+        .form-footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /*hover effect*/
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /*styling the divider container*/
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        /*adding a border before and after the divider*/
+        .divider::before, .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #333333;
+        }
+
+        /*styling the span elements inside the divider container*/
+        .divider span {
+            padding: 0 10px;
+            color: #8c8c8c;
+            font-size: 1rem;
+        }
+
+        /*styling the social icons login container*/
+        .social-icons-login {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+
+        /*styling the social button*/
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            background-color: transparent;
+            border: 1px solid #333333;
+            color: #ffffff;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        /*styling the icon inside the social button*/
+        .social-btn i {
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+
+        /*hover effects*/
+        .social-btn.google:hover {
+            background-color: #db4437;
+            border-color: #db4437;
+        }
+
+        .social-btn.apple:hover {
+            background-color: #000000;
+            border-color: #ffffff;
+        }
+
+        /**/
+        .signup-link, .signin-link {
+            text-align: center;
+            margin-top: 15px;
+            color: #8c8c8c;
+        }
+
+        .signup-link a, .signin-link a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /*hover effect*/
+        .signup-link a:hover, .signin-link a:hover {
+            text-decoration: underline;
+        }
+
+        /*making the design responsive for tablet screen sizes*/
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .container {
+                max-width: 400px;
+                padding: 50px 60px 35px;
+            }
+            
+            .logo h1 {
+                font-size: 2.8rem;
+            }
+            
+            .logo p {
+                font-size: 0.95rem;
+            }
+            
+            .tab {
+                padding: 14px 0;
+                font-size: 1.15rem;
+            }
+            
+            .form h2 {
+                font-size: 1.7rem;
+                margin-bottom: 22px;
+            }
+            
+            .form-group {
+                margin-bottom: 22px;
+            }
+            
+            .form-group input {
+                padding: 14px 18px;
+                font-size: 0.95rem;
+            }
+            
+            .btn {
+                padding: 14px;
+                font-size: 0.95rem;
+            }
+            
+            .form-footer {
+                font-size: 0.95rem;
+            }
+            
+            .divider {
+                margin: 25px 0;
+            }
+            
+            .social-icons-login {
+                margin-bottom: 45px;
+            }
+            
+            .social-btn {
+                padding: 11px;
+                font-size: 0.85rem;
+            }
+            
+            .social-btn i {
+                font-size: 1rem;
+            }
+        }
+
+        /*making the design responsive for smaller screen sizes*/
+        @media (max-width: 768px) {
+            .container {
+                max-width: 380px;
+                padding: 45px 50px 30px;
+            }
+            
+            .logo h1 {
+                font-size: 2.6rem;
+            }
+            
+            .logo p {
+                font-size: 0.9rem;
+            }
+            
+            .tab {
+                padding: 13px 0;
+                font-size: 1.1rem;
+            }
+            
+            .form h2 {
+                font-size: 1.6rem;
+                margin-bottom: 20px;
+            }
+            
+            .form-group {
+                margin-bottom: 20px;
+            }
+            
+            .form-group input {
+                padding: 13px 16px;
+                font-size: 0.9rem;
+            }
+            
+            .btn {
+                padding: 13px;
+                font-size: 0.9rem;
+                margin-bottom: 12px;
+            }
+            
+            .form-footer {
+                font-size: 0.9rem;
+                margin-top: 12px;
+                margin-bottom: 8px;
+            }
+            
+            .divider {
+                margin: 22px 0;
+            }
+            
+            .social-icons-login {
+                margin-bottom: 40px;
+            }
+            
+            .social-btn {
+                padding: 10px;
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                max-width: 350px;
+                padding: 40px 35px 25px;
+            }
+            
+            body {
+                padding: 15px;
+            }
+            
+            .logo h1 {
+                font-size: 2.4rem;
+            }
+            
+            .tab {
+                font-size: 1rem;
+                padding: 12px 0;
+            }
+            
+            .form h2 {
+                font-size: 1.5rem;
+            }
+            
+            .social-btn {
+                font-size: 0.75rem;
+            }
+        }

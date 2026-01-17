@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--importing fas fa emojis-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--linking external CSS stylesheet-->
+    <link rel="stylesheet" href="INDEXsigninsignup.css">
+    <!--Icon-->
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <!--title-->
+    <title>Streamify - Sign In/Sign Up</title>
+</head>
+
+<body>
+    <!--main content container-->
+    <div class="container">
+        <div class="logo">
+            <h1>Streamify</h1>
+            <p>Unlimited movies, TV shows, and more</p>
+        </div>
+
+        <div class="tabs">
+            <div class="tab active" data-tab="signin">Sign In</div>
+            <div class="tab" data-tab="signup">Sign Up</div>
+        </div>
+        <!--form container-->
+        <div class="form-container">
+            <form class="form active" id="signin_form">
+                <h2>Sign In</h2>
+
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address Here" required>
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+
+                <div class="remember-forgot">
+                    <div class="remember">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+
+                    <button type="button" class="btn" id="signin-btn">Sign In</button>
+
+                    <div class="signup_link">
+                        New to NETFLIX? <a href="#" class="switch-to-signup">Sign up now</a>
+                    </div>
+
+                    <div class="divider">
+                        <span>OR</span>
+                    </div>
+
+                    <div class="social-icons-login">
+                        <button type="button" class="social-btn google">
+                            <i class="fab fa-google"></i> Continue With Google
+                        </button>
+
+                        <button type="button" class="social-btn apple">
+                            <i class="fab fa-apple"></i> Continue With Apple ID
+                        </button>
+
+                    </div>
+                </div>
+            </form>
+
+            <form class="form" id="signup-form">
+                <h2>Sign Up</h2>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Username" required>
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" placeholder="Email Adress" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" placeholder="Confirm Password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+
+                <div class="form-footer">
+                    By clicking Sign Up, You are agreeing to our <a href="#">Terms of Use</a> and
+                    <a href="#">Privacy Policy</a>.
+                </div>
+
+                <button type="button" class="btn" id="signup-btn">Sign Up</button>
+
+                <div class="signin-link">
+                    Already have an account? <a href="#" class="switch-to-signin">Sign in now</a>.
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--signup/signin functionality-->
+    <script>
+        //waiting for the DOM to be fully loaded in before any execution
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('form').forEach(form => {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                });
+            });
+
+            //making the switches to singup/signin when the tabs or links are clicked
+            document.querySelector('.tab[data-tab="signin"]').addEventListener('click', (e) => {
+                const tabs = document.querySelectorAll('.tab');
+                const forms = document.querySelectorAll('.form');
+
+                tabs.forEach(tab => tab.classList.remove('active'));
+                e.currentTarget.classList.add('active');
+
+                forms.forEach(form => form.classList.remove('active'));
+
+                document.querySelector('#signin_form').classList.add('active');
+            });
+
+            document.querySelector('.tab[data-tab="signup"]').addEventListener('click', (e) => {
+                const tabs = document.querySelectorAll('.tab');
+                const forms = document.querySelectorAll('.form');
+
+                tabs.forEach(tab => tab.classList.remove('active'));
+                e.currentTarget.classList.add('active');
+
+                forms.forEach(form => form.classList.remove('active'));
+
+                document.querySelector('#signup-form').classList.add('active');
+            });
+
+            document.querySelector('.switch-to-signup').addEventListener('click', (e) => {
+                e.preventDefault();
+
+                const tabs = document.querySelectorAll('.tab');
+                const forms = document.querySelectorAll('.form');
+
+                tabs.forEach(tab => tab.classList.remove('active'));
+
+                document.querySelector('.tab[data-tab="signup"]').classList.add('active');
+
+                forms.forEach(form => form.classList.remove('active'));
+
+                document.querySelector('#signup-form').classList.add('active');
+            });
+
+            document.querySelector('.switch-to-signin').addEventListener('click', (e) => {
+                e.preventDefault();
+
+                const tabs = document.querySelectorAll('.tab');
+                const forms = document.querySelectorAll('.form');
+
+                tabs.forEach(t => t.classList.remove('active'));
+
+                document.querySelector('.tab[data-tab="signin"]').classList.add('active');
+
+                forms.forEach(form => form.classList.remove('active'));
+
+                document.querySelector('#signin_form').classList.add('active');
+            });
+
+            //sign up button functionality which handles user registration
+            const signupBtn = document.getElementById('signup-btn');
+
+            if (signupBtn) {
+                signupBtn.addEventListener('click', async function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    //gets user input values from the form
+                    const username = document.querySelector('#signup-form input[type="text"]').value.trim();
+
+                    const email = document.querySelector('#signup-form input[type="email"]').value.trim();
+
+                    const passwordInputs = document.querySelectorAll('#signup-form input[type ="password"]');
+                    const password = passwordInputs[0] ? passwordInputs[0].value.trim() : '';
+
+                    const confirmPassword = passwordInputs[1] ? passwordInputs[1].value.trim() : '';
+
+                    //checking if passwords match
+                    if (password !== confirmPassword) {
+                        alert('Passwords do not match, please try again');
+                        return;
+                    }
+
+                    //checks if all fields are filled
+                    if (username && email && password) {
+                        try {
+                            //sends POST request to create a new user
+                            const response = await fetch('http://localhost:4670/api/user/', {
+                                method: 'POST', headers: {'Content-Type' : 'application/json',
+                                },
+                                //converts data to JSON
+                                body: JSON.stringify({ name: username, email, password}),
+                            });
+
+                            const data = await response.json();
+
+                            //this handles successful registration of the user
+                            if (response.ok) {
+                                alert('Account created! Redirecting to login page...');
+
+                                //switches back to signin tab
+                                const tabs = document.querySelectorAll('.tab');
+                                const forms = document.querySelectorAll('.form');
+                                tabs.forEach(tab => tab.classList.remove('active'));
+
+                                document.querySelector('.tab[data-tab="signin"]').classList.add('active');
+
+                                forms.forEach(form => form.classList.remove('active'));
+                                document.querySelector('#signin_form').classList.add('active');
+
+                                document.querySelector('#signup-form').reset();
+
+                                document.querySelector('#signin_form input[type="email"]').value = email;
+                            } else {
+                                //error message if signup failed
+                                alert(data.message || 'sign up failed please try again');
+                            } 
+                        } catch (err) {
+                            alert('An error occured. please try again later');
+                        }
+                    } else {
+                        alert('All fields are required to be filled');
+                    }
+                });
+
+                document.getElementById('signup-form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    document.getElementById('signup-btn').click();
+                });
+            } else {
+            }
+
+            //sign in button functionality to allow user login
+            const loginBtn = document.getElementById('signin-btn');
+
+            if (loginBtn) {
+                loginBtn.addEventListener('click', async function() {
+                    //getting user input values from the sign in form
+                    const email = document.querySelector('#signin_form input[type="email"]').value.trim();
+                    const password = document.querySelector('#signin_form input[type="password"]').value.trim();
+
+                    //checks if email and password are given
+                    if (email && password) {
+                        try {
+                            //sends POST request to login
+                            const response = await fetch('http://localhost:4670/api/user/login', {
+                                method: 'POST', headers: {'Content-Type': 'application/json',   
+                                },
+                                body: JSON.stringify({email, password}),
+                            });
+
+                            const data = await response.json();
+
+                            //this handles the successful login
+                            if (response.ok) {
+                                alert(`Welcome back, ${data.user.name}!`);
+                                localStorage.setItem('user', JSON.stringify(data));
+                                //redirects to the main page after login
+                                window.location.href = 'indexMAIN.html';
+                            } else {
+                                //error message
+                                alert(data.message || 'Invalid email or password, please try again');
+                            }
+                        } catch(err) {
+                            alert('An error occurred. Please try again');
+                        }
+                    } else {
+                        alert('Please fill all the fields');
+                    }
+                });
+                document.getElementById('signin_form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    document.getElementById('signin-btn').click();
+                });
+            } else {
+            }
+        });
+    </script>
+    
+</body>
+</html>
